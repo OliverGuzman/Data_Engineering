@@ -14,6 +14,7 @@ ENV PATH="/venv/bin:$PATH"
 
 # Install pymongo
 RUN pip3 install pymongo
+RUN pip3 install pandas
 
 # Set working directory
 WORKDIR /project_data_engineering
