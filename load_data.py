@@ -14,7 +14,9 @@ file_path = "data.csv"
 #Verify if it is a valid csv file
 try:
     df = pd.read_csv(file_path)
-    print(f"Valid CSV file found with following characteristics: {len(df)} rows, {len(df.columns)} columns")
+    names_columns = list(df.columns)
+    print(f"Valid CSV file found with following characteristics: {len(df)} rows, {len(df.columns)} columns\n\
+    Column names: {names_columns}")
 
 #Handle exceptions for empty files and any other errors
 except pd.errors.EmptyDataError:
