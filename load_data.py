@@ -31,6 +31,7 @@ try:
         mycol.insert_many(csv_list)
         print("Sucessfully inserted")
 
+#Exception for error while inserting data
 except Exception as e:
     print(e)
 
